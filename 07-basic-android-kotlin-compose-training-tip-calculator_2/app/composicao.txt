@@ -1,0 +1,15 @@
+5. A composição
+
+Os elementos combináveis no app descrevem uma interface que mostra uma coluna com texto, um espaçador e uma caixa de texto. O texto mostra Calculate Tip, e a caixa de texto mostra um valor 0 ou o valor padrão.
+
+O Compose é um framework de interface declarativo, ou seja, você declara como será a interface no código. Se você quiser que a caixa de texto mostre inicialmente um valor 100, defina no código o valor inicial dos elementos de composição como 100.
+
+O que acontece se você quiser que a interface mude enquanto o app está em execução ou quando o usuário interage com ele? Por exemplo, o que acontece quando você atualiza a variável amountInput com o valor inserido pelo usuário e a mostra na caixa de texto? É então que você precisa usar um processo chamado recomposição para atualizar a composição do app.
+
+A composição é uma descrição da interface criada pelo Compose quando ele executa elementos combináveis. Os apps do Compose chamam funções combináveis para transformar dados em elementos da interface. Se uma mudança de estado ocorrer, o Compose vai executar novamente as funções combináveis afetadas com o novo estado, criando uma interface atualizada. Isso é chamado de recomposição. O Compose programa uma recomposição para você.
+
+Quando o Compose executa seus elementos combináveis pela primeira vez durante a composição inicial, ele acompanha os elementos chamados para descrever a interface em uma composição. A recomposição acontece quando o Compose executa novamente os elementos de composição que foram modificados em resposta a mudanças de dados e, em seguida, atualiza a composição para refletir essas mudanças.
+
+A composição só pode ser produzida por uma composição inicial e atualizada por recomposição. A única maneira de modificar uma composição é pela recomposição. Para fazer isso, o Compose precisa saber qual estado será acompanhado para programar a recomposição ao receber uma atualização. No seu caso, é a variável amountInput. Então, sempre que o valor mudar, o Compose vai programar uma recomposição.
+
+Você usa os tipos State e MutableState no Compose para tornar o estado no app observável ou monitorado pelo Compose. O tipo State é imutável, ou seja, o valor dele só será lido, enquanto o tipo MutableState for mutável. Você pode usar a função mutableStateOf() para criar um MutableState observável. Ele recebe um valor inicial como um parâmetro envolvido por um objeto State, que torna o value dele observável.

@@ -1,0 +1,91 @@
+# ==========================================
+# IGNORAR ARQUIVOS GERADOS (BUILD / CACHE)
+# ==========================================
+
+# Pastas de build (em qualquer nível)
+build/
+*/build/
+
+# Cache do Gradle
+.gradle/
+*/.gradle/
+
+# Cache do Kotlin
+.kotlinc/
+.kotlin/
+
+# Saída de compilação Java/Kotlin genérica
+out/
+*/out/
+
+# ==========================================
+# IGNORAR CONFIGURAÇÕES DE IDE
+# ==========================================
+
+# IntelliJ / Android Studio
+.idea/
+*/.idea/
+*.iml
+*.ipr
+*.iws
+
+# VSCode
+.vscode/
+*/.vscode/
+
+# Eclipse
+.project
+.classpath
+.settings/
+*/.settings/
+
+# ==========================================
+# IGNORAR ARQUIVOS TEMPORÁRIOS / DE SISTEMA
+# ==========================================
+
+# Logs e temporários
+*.log
+*.tmp
+*.swp
+*.bak
+
+# Arquivos de sistema
+.DS_Store
+Thumbs.db
+ehthumbs.db
+desktop.ini
+
+# ==========================================
+# IGNORAR DEPENDÊNCIAS (CASO EXISTA)
+# ==========================================
+
+# Node.js (se houver scripts de build front-end)
+node_modules/
+*/node_modules/
+
+# ==========================================
+# IGNORAR SAÍDAS DE EMPACOTAMENTO
+# ==========================================
+
+# APKs, AABs e outros binários gerados
+*.apk
+*.aab
+*.aar
+*.dex
+*.class
+*.jar
+*.war
+*.ear
+
+# ==========================================
+# OPCIONAL: IGNORAR AMBIENTES VIRTUAIS / SCRIPTS
+# ==========================================
+
+# Python
+venv/
+*/venv/
+
+# Shell / scripts locais
+*.env
+.env.local
+

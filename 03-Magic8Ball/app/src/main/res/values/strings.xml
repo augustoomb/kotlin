@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">Magic8Ball</string>
+    <string name="text_in_image_test">Teste de texto acima da imagem</string>
+</resources>
